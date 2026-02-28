@@ -16,6 +16,12 @@ name: "Check Spelling"
 on:
   pull_request:
     branches: [main]
+    paths:
+      - ".github/workflows/spellcheck.yaml"
+      - ".github/workflows/schema-validation.yml"
+      - ".cspell.json"
+      - "**/*.md"
+      - "docs/**"
 
 jobs:
   spellcheck:
