@@ -139,6 +139,7 @@ async function generate() {
     console.log(`Success! Types written to ${OUTPUT_FILE}`);
   } catch (err) {
     console.error('Error generating types:', err);
+    process.exit(1);
   }
 }
 
